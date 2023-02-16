@@ -1,0 +1,14 @@
+.SwiperCarousel {
+  border: 1px solid peru;
+  .swiper {
+    // height: 300px;
+    border: 1px solid blue;
+  }
+  .swiper-slide {
+    border: 1px solid red;
+    width: 100%;
+    img {
+      max-width: 400px;
+    }
+  }
+}

@@ -1,0 +1,71 @@
+.VolunteerForm {
+  background: linear-gradient(transparent, #ffc39e);
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 10px;
+  h2 {
+    text-align: center;
+  }
+  fieldset {
+    border: 1px solid #9900ff;
+    legend {
+      font-weight: 600;
+    }
+    label {
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      margin: 10px auto;
+      padding: 20px;
+      input,
+      textarea {
+        border: 1px solid #9900ff;
+      }
+    }
+    input {
+      padding: 0.5em;
+    }
+    #legal-name,
+    #pref-name,
+    #email,
+    #phone {
+      width: 100%;
+    }
+    #volunteer-hours {
+      width: 10%;
+    }
+    #why-volunteer {
+      font-family: Arial, Helvetica, sans-serif;
+      width: 100%;
+    }
+    label[for="bg-check"],
+    label[for="tech"],
+    label[for="tasks"] {
+      label {
+        flex-direction: row;
+        padding: 0;
+        margin: 10px 0;
+      }
+      label[for="other-tasks"] {
+        flex-direction: column;
+      }
+    }
+  }
+  button {
+    margin: 20px auto;
+    padding: 10px;
+    background: #9900ff;
+    color: white;
+    box-shadow: 10px 10px black;
+    border: 2px solid #9900ff;
+    font-size: 1.5em;
+    transition: 0.5s;
+    display: block;
+  }
+  button:hover {
+    background: white;
+    color: #9900ff;
+    cursor: pointer;
+  }
+}
