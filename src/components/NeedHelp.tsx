@@ -1,6 +1,7 @@
-import "./NeedHelp.css";
-import homepageVolunteer from "../graphics/homepageVolunteer.png";
-import homepageDonate from "../graphics/homepageDonate.png";
+import "./NeedHelp.scss";
+import homepageVolunteer from "@/graphics/homepageVolunteer.png";
+import homepageDonate from "@/graphics/homepageDonate.png";
+import Image from "next/image";
 
 export default function NeedHelp() {
   return (
@@ -13,7 +14,7 @@ export default function NeedHelp() {
             target={"_blank"}
             rel={"noreferrer"}
           >
-            <img src={homepageDonate} alt="Two hands offering a heart" />
+            <Image src={homepageDonate} alt="Two hands offering a heart" />
             <h3>Click here to donate today!</h3>
           </a>
           <p>
@@ -28,7 +29,7 @@ export default function NeedHelp() {
             target={"_blank"}
             rel={"noreferrer"}
           >
-            <img
+            <Image
               src={homepageVolunteer}
               alt="Two cartoon volunteers high fiving each other"
             />

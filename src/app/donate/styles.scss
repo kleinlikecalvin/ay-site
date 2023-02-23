@@ -1,0 +1,49 @@
+.Donate h1 {
+  text-align: center;
+  color: #9900ff;
+}
+.Donate .info-cont {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid red;
+}
+.Donate .widget {
+  border: 1px solid red;
+  height: 300px;
+  width: 300px;
+  background: red;
+}
+.Donate .info {
+  width: 60%;
+  border: 1px solid red;
+}
+.Donate .direct {
+  background-color: #fc6203;
+  padding: 30px;
+}
+.Donate .direct a {
+  text-decoration: none;
+  transition: 300ms;
+}
+.Donate .direct a:hover {
+  color: white;
+  transition: 300ms;
+}
+.venmo {
+  color: #3288f8;
+}
+.zelle {
+  color: #6a1dce;
+}
+.Donate .amazon-options-cont {
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid red;
+}
+.Donate .donation {
+  height: 400px;
+  width: 400px;
+  border: 1px solid red;
+  background-position: center;
+  background-repeat: no-repeat;
+}

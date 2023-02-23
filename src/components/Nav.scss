@@ -1,0 +1,48 @@
+.Nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #9900ff;
+  color: white;
+  /*
+* @NOTE
+- The nav bar starts to look fucked around 1010px
+- I would like it to be a white background until scrolling
+- Upon scroll background goes to #9900ff
+*/
+  .logo-cont {
+    display: flex;
+  }
+  span {
+    display: flex;
+    align-items: center;
+  }
+  .logo {
+    background-image: url("../graphics/whiteSmiley.PNG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 45px;
+    height: 45px;
+    margin: 10px;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+  }
+  a {
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 800;
+    transition: 0.3s;
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+  }
+  button:hover {
+    color: #000;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+}

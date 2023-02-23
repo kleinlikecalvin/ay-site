@@ -1,0 +1,19 @@
+.centered {
+  text-align: center;
+}
+ul,
+p {
+  line-height: 2em;
+}
+
+// Screen Sizes
+$tabletAndDesktop: "min-width: 768px";
+$mobileOnly: "max-width: 767px";
+$maxContentWidth: 1440px;
+
+// Brand Colors
+$purple: #9900ff;
+$lightPurple: #ddabff;
+$orange: #fc6230;
+$lightOrange: #ffc39e;
+$black: #212121;

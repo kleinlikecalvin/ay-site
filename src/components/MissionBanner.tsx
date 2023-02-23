@@ -16,7 +16,6 @@ export default function MissonBanner() {
         height="315"
         src="https://www.youtube-nocookie.com/embed/alhCAb8-zAI"
         title="Anaheim Youtopia - Who We Are"
-        frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
       ></iframe>

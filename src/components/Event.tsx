@@ -1,5 +1,13 @@
 import "./Event.scss";
-import "../_global_styling.scss";
+
+type EventProps = {
+  classes: string;
+  landingPage: string;
+  imageSource: string;
+  altText: string;
+  header: string;
+  blurb: string;
+};
 
 export default function Event({
   classes,
@@ -8,7 +16,7 @@ export default function Event({
   altText,
   header,
   blurb,
-}) {
+}: EventProps) {
   return (
     <a className={"event " + classes} href={landingPage}>
       <img src={imageSource} alt={altText} width="300" height="300" />

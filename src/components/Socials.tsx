@@ -1,4 +1,4 @@
-import "./Socials.css";
+import "./Socials.scss";
 
 export default function Socials() {
   return (

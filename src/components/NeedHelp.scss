@@ -1,0 +1,21 @@
+.NeedHelp h2 {
+  background-color: black;
+  color: #ffc39e;
+  font-size: 34px;
+  text-align: center;
+  padding: 20px;
+  text-transform: uppercase;
+  .donateVolunteerCont {
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+  }
+  section {
+    text-align: center;
+    width: 30%;
+    padding: 20px;
+  }
+  Image {
+    width: 300px;
+  }
+}

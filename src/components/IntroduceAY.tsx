@@ -1,13 +1,14 @@
-import "./IntroduceAY.css";
-import purpleMail from "../graphics/purpleMail.PNG";
-import anaheimA from "../graphics/anaheimA.PNG";
-import coinPurse from "../graphics/coinPurse.PNG";
+import "./IntroduceAY.scss";
+import purpleMail from "@/graphics/purpleMail.PNG";
+import anaheimA from "@/graphics/anaheimA.PNG";
+import coinPurse from "@/graphics/coinPurse.PNG";
+import Image from "next/image";
 
 export default function IntroduceAY() {
   return (
     <div className="IntroduceAY">
       <section>
-        <img src={anaheimA} alt="The letter A to represent Anaheim" />
+        <Image src={anaheimA} alt="The letter A to represent Anaheim" />
         <h3>Made by Anaheimers</h3>
         <p>
           Our founders grew up here, in Anaheim, and live here. Together, we
@@ -21,7 +22,7 @@ export default function IntroduceAY() {
           className="subscribe"
           rel="noreferrer"
         >
-          <img
+          <Image
             src={purpleMail}
             alt="Cartoon envelope with a visible hand pointing one finger towards the center indicating that a click action is to be performed in order to sign up for the Anaheim Youtopia monthly newsletter"
           />
@@ -35,7 +36,7 @@ export default function IntroduceAY() {
         </p>
       </section>
       <section>
-        <img
+        <Image
           src={coinPurse}
           alt="A small coin purse drawing used to suggest that Anaheim Youtopia is inexpensive for participants"
         />

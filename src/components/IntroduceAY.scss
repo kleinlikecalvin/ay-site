@@ -1,0 +1,29 @@
+.IntroduceAY {
+  display: flex;
+  margin: 5% 0;
+  align-items: center;
+  justify-content: space-evenly;
+  section {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    min-height: 330px;
+    margin: 1%;
+    padding: 2%;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #fc6203;
+    border-radius: 7px;
+  }
+  Image {
+    width: 30%;
+  }
+  .subscribe {
+    display: block;
+    text-transform: capitalize;
+    text-decoration: unset;
+  }
+  .subscribe h3 {
+    color: #9900ff;
+  }
+}
