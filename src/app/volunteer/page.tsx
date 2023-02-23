@@ -1,4 +1,4 @@
-import "./Volunteer.scss";
+import "./styles.scss";
 import VolunteerForm from "@/components/VolunteerForm";
 import Opportunities from "@/components/Opportunities";
 

@@ -1,9 +1,10 @@
+import Image, { ImageProps } from "next/image";
 import "./Event.scss";
 
 type EventProps = {
   classes: string;
   landingPage: string;
-  imageSource: string;
+  imageSource: ImageProps["src"];
   altText: string;
   header: string;
   blurb: string;
@@ -19,7 +20,7 @@ export default function Event({
 }: EventProps) {
   return (
     <a className={"event " + classes} href={landingPage}>
-      <img src={imageSource} alt={altText} width="300" height="300" />
+      <Image src={imageSource} alt={altText} width="300" height="300" />
       <div className="copy-cont">
         <h3>{header}</h3>
         <p>{blurb}</p>

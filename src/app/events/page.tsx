@@ -1,6 +1,6 @@
-import "./Events.scss";
+import "./styles.scss";
 import Event from "@/components/Event";
-import blackSmiley from "@/graphics/blackSmiley.PNG";
+import blackSmiley from "@/graphics/blackSmiley.png";
 
 export default function Events() {
   // School's Out

@@ -1,5 +1,5 @@
-import "./AboutUs.scss";
-import "../globals.scss";
+import "./styles.scss";
+import "@/app/global.scss";
 import SwiperCarousel from "@/components/SwiperCarousel";
 import MissonBanner from "@/components/MissionBanner";
 import nikkiKleinHeadshot from "@/graphics/nikkiKleinHeadshot.jpg";

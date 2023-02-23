@@ -1,4 +1,4 @@
-import "./Home.scss";
+import "./styles.scss";
 import MissionBanner from "@/components/MissionBanner";
 import IntroduceAY from "@/components/IntroduceAY";
 import NeedHelp from "@/components/NeedHelp";

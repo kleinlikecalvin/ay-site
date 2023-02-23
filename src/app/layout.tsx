@@ -1,6 +1,6 @@
 import { Bitter } from "@next/font/google";
-import "./Layout.scss";
-import "@/app/globals.scss";
+import "./layout.scss";
+import "@/app/global.scss";
 import Head from "@/app/head";
 import GlobalDonate from "@/components/GlobalDonate";
 import Nav from "@/components/Nav";
