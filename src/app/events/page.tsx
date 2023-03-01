@@ -3,11 +3,7 @@ import Event from "@/components/Event";
 import blackSmiley from "@/graphics/blackSmiley.png";
 
 export default function Events() {
-  // School's Out
-  // VAPA
-  // Annual Art Contest & Exhibit
-  // Kids Play Day
-  // Event(landingPage,imageSource, altText, header, blurb)
+  // Event(classes, landingPage,imageSource, altText, header, blurb)
   return (
     <div className="Events">
       <Event
