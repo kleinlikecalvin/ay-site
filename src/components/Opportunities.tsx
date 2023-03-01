@@ -1,3 +1,5 @@
+"use client";
+
 import "./Opportunities.scss";
 
 export default function Opportunities() {
@@ -10,23 +12,6 @@ export default function Opportunities() {
     <div className="Opportunities">
       <h2>Opportunities</h2>
       <div className="accordions-cont">
-        <button className="accordion" onClick={(event) => activate(event)}>
-          Special Events Spray Paint Pop Up
-        </button>
-        <ul className="panel">
-          <li>Spray paint artist</li>
-          <li>General Volunteer</li>
-          <li>Sponsor</li>
-        </ul>
-        <button className="accordion" onClick={(event) => activate(event)}>
-          Annual School's Out Party
-        </button>
-        <ul className="panel">
-          <li>General Volunteer</li>
-          <li>Sponsor</li>
-          <li>Vendor</li>
-          <li>Raffle Prize Donor</li>
-        </ul>
         <button className="accordion" onClick={(event) => activate(event)}>
           Annual Art Contest
         </button>
