@@ -11,26 +11,11 @@ export default function Events() {
   return (
     <div className="Events">
       <Event
-        landingPage="www.anaheimYoutopia.com/communityEvents"
-        imageSource={blackSmiley}
-        altText="black smiley"
-        header="Community Events"
-        blurb="We hold a variety of community events throughout the year"
-      />
-      <Event
-        classes="reverse"
-        landingPage="www.anaheimYoutopia.com/schoolsOut"
-        imageSource={blackSmiley}
-        altText="black smiley"
-        header="School's Out Party"
-        blurb="Join us for an afternoon of good times, good food, and good music to celebrate the end of another school year"
-      />
-      <Event
         landingPage="www.anaheimYoutopia.com/artContest"
         imageSource={blackSmiley}
         altText="black smiley"
         header="Anaheim Youtopia Annual Art Contest"
-        blurb="Enter to win a cash prize and show of your talents in our public exhibit"
+        blurb="Enter to win a cash prize and show off your talents in our public exhibit"
       />
     </div>
   );
