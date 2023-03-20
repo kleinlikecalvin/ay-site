@@ -1,11 +1,11 @@
-import { Bitter } from "@next/font/google";
+import { Poppins } from "@next/font/google";
 import "./layout.scss";
-import "@/app/global.scss";
+import "./global.scss";
 import Head from "@/app/head";
 import GlobalDonate from "@/components/GlobalDonate";
 import Nav from "@/components/Nav";
 
-const bitter = Bitter({
+const bitter = Poppins({
   subsets: ["latin"],
   weight: ["200", "400", "600", "700", "900"],
 });

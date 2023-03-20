@@ -8,7 +8,6 @@ export default function Nav() {
         <h1>Anaheim Youtopia</h1>
       </Link>
       <div>
-        <Link href="/">Home</Link>
         <Link href="/donate">Donate</Link>
         <Link href="/volunteer">Volunteer</Link>
         <Link href="/events">Events</Link>

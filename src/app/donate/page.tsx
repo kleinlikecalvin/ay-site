@@ -1,5 +1,5 @@
 import "./styles.scss";
-import "@/app/global.scss";
+// import "./global.scss";
 
 export default function Donate() {
   return (

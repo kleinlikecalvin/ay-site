@@ -14,7 +14,9 @@ export default function Home() {
           "Anaheim Youtopia full logo graphic with a colorful character jumping with excitement"
         }
       />
+      <hr />
       <MissionBanner />
+      <hr />
       <IntroduceAY />
       <NeedHelp />
       <div className="socials-cont">

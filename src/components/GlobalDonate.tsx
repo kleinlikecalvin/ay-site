@@ -4,8 +4,10 @@ import Button from "./Button";
 export default function GlobalDonate() {
   return (
     <div className="GlobalDonate">
-      <span>Help us with our community graduation party May 28, 2022</span>
-      <Button color="#FFF">Donate Today!</Button>
+      <span>Support young artists by helping us offer cash grants!</span>
+      <Button bgColor="#9900ff" textColor="#fafafa">
+        Donate
+      </Button>
     </div>
   );
 }
