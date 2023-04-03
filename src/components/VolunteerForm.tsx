@@ -1,4 +1,4 @@
-import "./VolunteerForm.scss";
+import "./_VolunteerForm.scss";
 
 export default function VolunteerForm() {
   return (

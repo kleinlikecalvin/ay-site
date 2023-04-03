@@ -1,4 +1,4 @@
-import "./NeedHelp.scss";
+import "./_NeedHelp.scss";
 import homepageVolunteer from "@/graphics/homepageVolunteer.png";
 import homepageDonate from "@/graphics/homepageDonate.png";
 import Image from "next/image";

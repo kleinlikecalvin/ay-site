@@ -1,6 +1,6 @@
 import { Poppins } from "@next/font/google";
-import "./layout.scss";
-import "./global.scss";
+import "./_layout.scss";
+import "./_global.scss";
 import Head from "@/app/head";
 import GlobalDonate from "@/components/GlobalDonate";
 import Nav from "@/components/Nav";

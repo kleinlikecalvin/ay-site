@@ -1,6 +1,6 @@
 "use client";
 
-import "./Opportunities.scss";
+import "./_Opportunities.scss";
 
 export default function Opportunities() {
   function activate(event) {

@@ -1,4 +1,4 @@
-import "./IntroduceAY.scss";
+import "./_IntroduceAY.scss";
 import purpleMail from "@/graphics/purpleMail.PNG";
 import anaheimA from "@/graphics/anaheimA.PNG";
 import coinPurse from "@/graphics/coinPurse.PNG";

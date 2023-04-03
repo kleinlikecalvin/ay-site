@@ -1,5 +1,5 @@
 import Image, { ImageProps } from "next/image";
-import "./Event.scss";
+import "./_Event.scss";
 
 type EventProps = {
   classes: string;

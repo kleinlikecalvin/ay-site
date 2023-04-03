@@ -1,4 +1,4 @@
-import "@/components/NewsletterSignUp.scss";
+import "@/components/_NewsletterSignUp.scss";
 
 export default function NewsletterSignUp() {
   return (

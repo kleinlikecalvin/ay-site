@@ -1,5 +1,5 @@
 import React from "react";
-import "./Button.scss";
+import "./_Button.scss";
 export default function Button({ bgColor, textColor, children }) {
   return (
     <button

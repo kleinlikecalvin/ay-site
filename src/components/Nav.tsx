@@ -1,5 +1,5 @@
 import Link from "next/link";
-import "./Nav.scss";
+import "./_Nav.scss";
 export default function Nav() {
   return (
     <nav className="Nav">

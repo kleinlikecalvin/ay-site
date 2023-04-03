@@ -1,5 +1,5 @@
 import Image from "next/image";
-import "./styles.scss";
+import "./_styles.scss";
 
 export default function Contact() {
   return (

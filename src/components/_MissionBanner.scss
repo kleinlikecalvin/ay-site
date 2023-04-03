@@ -1,0 +1,40 @@
+@import "@/app/_global";
+.MissionBanner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 5% 1%;
+  padding: 5% 5%;
+  > div {
+    // width: 50%;
+    max-width: 500px;
+    padding: 50px;
+    text-align: center;
+    border-radius: $borderRadius;
+    box-shadow: 0 0 100px $lightPurple;
+  }
+  iframe {
+    border: 10px solid $black;
+    border-radius: $borderRadius;
+  }
+  @media ($mobileAndTabletOnly) {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    > div {
+      width: 90%;
+      padding: 20px;
+      text-align: center;
+      border-radius: $borderRadius;
+      box-shadow: 0 0 100px $lightPurple;
+    }
+    iframe {
+      border: none;
+      border-radius: $borderRadius;
+      width: auto;
+    }
+  }
+}

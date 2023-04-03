@@ -1,4 +1,4 @@
-import "./MissionBanner.scss";
+import "./_MissionBanner.scss";
 export default function MissonBanner() {
   return (
     <div className="MissionBanner">

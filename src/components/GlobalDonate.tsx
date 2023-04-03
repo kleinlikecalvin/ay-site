@@ -1,4 +1,4 @@
-import "./GlobalDonate.scss";
+import "./_GlobalDonate.scss";
 import Button from "./Button";
 
 export default function GlobalDonate() {

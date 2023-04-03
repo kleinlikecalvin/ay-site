@@ -1,0 +1,16 @@
+@import "./_global.scss";
+.Home {
+  .landing-banner {
+    height: auto;
+    width: 90%;
+    display: block;
+    margin: 5% auto;
+    box-shadow: 0 0 100px $lightPurple;
+    border-radius: $borderRadius;
+  }
+  .socials-cont {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 0;
+  }
+}
