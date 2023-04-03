@@ -1,5 +1,6 @@
-import "./styles.scss";
-import "@/app/global.scss";
+import Image from "next/image";
+import "./_styles.scss";
+import "@/app/_global.scss";
 import SwiperCarousel from "@/components/SwiperCarousel";
 import MissonBanner from "@/components/MissionBanner";
 import nikkiKleinHeadshot from "@/graphics/nikkiKleinHeadshot.jpg";
@@ -75,10 +76,10 @@ export default function AboutUs() {
       </section>
       <section className="note-section">
         <p>
-          "At Anaheim Youtopia, we believe community is what{" "}
+          At Anaheim Youtopia, we believe community is what{" "}
           <span className="orange">you</span> make it. We also believe that
-          community doesn't begin and end with our organization. We want our
-          teens to know that they are a part of this city, that they can use
+          community doesn&apos;t begin and end with our organization. We want
+          our teens to know that they are a part of this city, that they can use
           their voices, and they can learn where to find invitations to
           participate even more. We want to help them influence the world around
           them to be a more inclusive and considerate place for all of its
@@ -87,7 +88,7 @@ export default function AboutUs() {
           Anaheim.
         </p>
         <div>
-          <img
+          <Image
             src={nikkiKleinHeadshot}
             alt="Anaheim Youtopia Director, Nikki Klein"
             width={221}
@@ -99,22 +100,22 @@ export default function AboutUs() {
             empower. You can check out our opportunities page to learn about our
             volunteer neeads! We’re also always looking for partners, sponsors,
             and welcome donations of all kinds. So, join us as we move forward
-            with love, Anaheim Youtopia isn't much without{" "}
-            <span className="orange">you</span>."{" "}
+            with love, Anaheim Youtopia isn&apos;t much without{" "}
+            <span className="orange">you</span>.
           </p>
         </div>
         <p> -Nikki Klein, Anaheim Youtopia Director</p>
       </section>
       <section className="quote-section">
-        <img
+        <Image
           src={quoteIcon}
           alt="two characters reaching towards eachother with a heart shaped world between them"
           width={350}
         />
         <em>
-          "Life has taught us that love does not consist in gazing at each other
-          but in the looking outward together in the same direction." - Antoine
-          de Saint-Exupéry
+          &quot;Life has taught us that love does not consist in gazing at each
+          other but in the looking outward together in the same direction.&quot;
+          - Antoine de Saint-Exupéry
         </em>
       </section>
     </div>
