@@ -5,7 +5,7 @@ export default function GlobalDonate() {
   return (
     <div className="GlobalDonate">
       <span>Support young artists by helping us offer cash grants!</span>
-      <Button bgColor="#9900ff" textColor="#fafafa">
+      <Button bgColor="#fff" textColor="#212121">
         Donate
       </Button>
     </div>
