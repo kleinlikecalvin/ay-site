@@ -1,0 +1,70 @@
+.Carousel {
+  display: flex;
+  margin: auto;
+  font-weight: 450;
+  font-size: 15px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  border: 1px solid peru;
+  .slides-container {
+    overflow-x: scroll;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    scroll-behavior: smooth;
+    scroll-snap-type: x;
+    border: 1px solid blue;
+  }
+  ::-webkit-scrollbar {
+    height: 0;
+  }
+  .arrow {
+    font-size: 20px;
+    background: none;
+    border: none;
+  }
+  .prev {
+    transform: rotate(-90deg);
+  }
+  .next {
+    transform: rotate(90deg);
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    list-style: none;
+    border: 1px solid green;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    border: 1px solid blue;
+    padding: 11px;
+    border-bottom: 2px solid transparent;
+    white-space: nowrap;
+    scroll-snap-align: start;
+  }
+  li:visible:last {
+    background-color: pink;
+  }
+  li:hover,
+  li:active,
+  li:focus {
+    border-bottom: 2px solid #111;
+  }
+  a {
+    text-decoration: none;
+    color: #111;
+  }
+  .slide {
+    border: 1px solid red;
+    width: 100%;
+    img {
+      max-width: 400px;
+    }
+  }
+}
