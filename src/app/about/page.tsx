@@ -1,7 +1,7 @@
 import Image from "next/image";
 import "./_styles.scss";
 import "@/app/_global.scss";
-import SwiperCarousel from "@/components/SwiperCarousel";
+import Carousel from "@/components/Carousel";
 import MissonBanner from "@/components/MissionBanner";
 import nikkiKleinHeadshot from "@/graphics/nikkiKleinHeadshot.jpg";
 import quoteIcon from "@/graphics/quoteIcon.png";
@@ -13,7 +13,7 @@ export default function AboutUs() {
         <span className="purple">Hello</span> and{" "}
         <span className="orange">Welcome</span>
       </h1>
-      <SwiperCarousel />
+      <Carousel />
       <MissonBanner />
       <section className="support-section">
         <h3>
