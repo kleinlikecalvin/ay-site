@@ -1,53 +1,48 @@
+"use client";
+
+import { useKeenSlider } from "keen-slider/react";
+import "keen-slider/keen-slider.min.css";
 import "./_Carousel.scss";
-// Need to set it up to dynamically accept any amount of slides
 
-// Need to figure out the onClick behavior
+import spray from "@/graphics/aboutUs/kidsPaintingAtSchoolsOut22.jpg";
+import ayFinger from "@/graphics/aboutUs/ayFingerPaint22.jpg";
+import kidsPlayDay from "@/graphics/aboutUs/kidsPlayDay22.jpg";
+import schoolsOutVolunteers from "@/graphics/aboutUs/schoolsOutVolunteers22.jpg";
+import Image from "next/image";
 
-// Maybe take in a slidesPerView prop
-// The homepage = 1 slidePerView
-// The others on desktop = 4?
-// Tablet = 3?
-// Mobile = 1?
-
-// Probably want to be able to swiper or drag, not just click the arrows
+// LEFT TO DO: Add images to carousel, work on styling. Also consider using onReachEnd with a function that sets the swiper.activeIndex to 0 in hopes that it rewinds to the front.
 
 export default function Carousel() {
+  const [ref] = useKeenSlider<HTMLDivElement>();
   const slides = [
-    { text: "one", link: "/" },
-    { text: "two", link: "/" },
-    { text: "three", link: "/" },
-    { text: "four", link: "/" },
-    { text: "five", link: "/" },
+    {
+      content: spray,
+      desc: "Teens spray painting at our School's Out Party 2022",
+    },
+    {
+      content: ayFinger,
+      desc: "A hand covered in paint making a peace sign next to finger painted letters 'AY'",
+    },
+    {
+      content: kidsPlayDay,
+      desc: "AY Volunteer chatting with some kids while he gets them paint",
+    },
+    {
+      content: schoolsOutVolunteers,
+      desc: "Volunteers from 2022 School's Out Party",
+    },
   ];
-  // function prevOnClick() {
-  //   el.scrollLeft -= 500;
-  // }
-  // function nextOnClick() {
-  //   .scrollLeft += 500;
-  // }
 
   return (
-    <div className="Carousel">
-      <button
-        id="prev-arrow"
-        className="arrow prev"
-        // onClick={() => prevOnClick}
-      >
-        ^
-      </button>
-      <ul id="slides-container">
-        {slides.map((slide) => {
-          return (
-            <li key={slide.text}>
-              {/* if slide has an image then render image */}
-              <a href={slide.link}>{slide.text}</a>
-            </li>
-          );
-        })}
-      </ul>
-      <button id="next-arrow" className="arrow next">
-        ^
-      </button>
+    <div className="Carousel keen-slider">
+      {slides.map((slideObj, index) => (
+        <div
+          key={index}
+          className={`keen-slider__slide number-slide${index + 1}`}
+        >
+          <Image src={slideObj.content} alt={slideObj.desc} width={200} />
+        </div>
+      ))}
     </div>
   );
 }
