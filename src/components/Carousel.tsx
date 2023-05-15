@@ -6,39 +6,10 @@ import "./_Carousel.scss";
 
 // Images
 import Image from "next/image";
-import spray from "@/graphics/aboutUs/kidsPaintingAtSchoolsOut22.jpg";
-import ayFinger from "@/graphics/aboutUs/ayFingerPaint22.jpg";
-import kidsPlayDay from "@/graphics/aboutUs/kidsPlayDay22.jpg";
-import schoolsOutVolunteers from "@/graphics/aboutUs/schoolsOutVolunteers22.jpg";
 
-export default function Carousel() {
-  const slides = [
-    {
-      content: spray,
-      desc: "Teens spray painting at our School's Out Party 2022",
-    },
-    {
-      content: ayFinger,
-      desc: "A hand covered in paint making a peace sign next to finger painted letters 'AY'",
-    },
-    {
-      content: kidsPlayDay,
-      desc: "AY Volunteer chatting with some kids while he gets them paint",
-    },
-    {
-      content: schoolsOutVolunteers,
-      desc: "Volunteers from 2022 School's Out Party",
-    },
-    {
-      content: schoolsOutVolunteers,
-      desc: "Volunteers from 2022 School's Out Party",
-    },
-  ];
+export default function Carousel({ slides }) {
   const [sliderRef, instanceRef] = useKeenSlider(
     {
-      slideChanged() {
-        console.log("slide changed");
-      },
       loop: true,
       breakpoints: {
         "(min-width: 815px)": {

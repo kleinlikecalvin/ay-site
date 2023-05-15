@@ -1,7 +1,7 @@
 import "./_IntroduceAY.scss";
-import purpleMail from "@/graphics/purpleMail.PNG";
-import anaheimA from "@/graphics/anaheimA.PNG";
-import coinPurse from "@/graphics/coinPurse.PNG";
+import purpleMail from "@/graphics/home/purpleMail.png";
+import anaheimA from "@/graphics/home/anaheimA.png";
+import coinPurse from "@/graphics/home/coinPurse.png";
 import Image from "next/image";
 
 export default function IntroduceAY() {

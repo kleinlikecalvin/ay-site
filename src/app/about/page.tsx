@@ -4,7 +4,7 @@ import "@/app/_global.scss";
 import Carousel from "@/components/Carousel";
 import MissonBanner from "@/components/MissionBanner";
 import nikkiKleinHeadshot from "@/graphics/nikkiKleinHeadshot.jpg";
-import quoteIcon from "@/graphics/quoteIcon.png";
+import quoteIcon from "@/graphics/about/quoteIcon.png";
 
 export default function AboutUs() {
   return (
