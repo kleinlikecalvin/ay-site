@@ -4,16 +4,14 @@ import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import "./_Carousel.scss";
 
+// Images
+import Image from "next/image";
 import spray from "@/graphics/aboutUs/kidsPaintingAtSchoolsOut22.jpg";
 import ayFinger from "@/graphics/aboutUs/ayFingerPaint22.jpg";
 import kidsPlayDay from "@/graphics/aboutUs/kidsPlayDay22.jpg";
 import schoolsOutVolunteers from "@/graphics/aboutUs/schoolsOutVolunteers22.jpg";
-import Image from "next/image";
-
-// LEFT TO DO: Add images to carousel, work on styling. Also consider using onReachEnd with a function that sets the swiper.activeIndex to 0 in hopes that it rewinds to the front.
 
 export default function Carousel() {
-  const [ref] = useKeenSlider<HTMLDivElement>();
   const slides = [
     {
       content: spray,
@@ -31,10 +29,64 @@ export default function Carousel() {
       content: schoolsOutVolunteers,
       desc: "Volunteers from 2022 School's Out Party",
     },
+    {
+      content: schoolsOutVolunteers,
+      desc: "Volunteers from 2022 School's Out Party",
+    },
   ];
+  const [sliderRef, instanceRef] = useKeenSlider(
+    {
+      slideChanged() {
+        console.log("slide changed");
+      },
+      loop: true,
+      breakpoints: {
+        "(min-width: 815px)": {
+          slides: {
+            perView: 4,
+          },
+        },
+        "(max-width: 814px)": {
+          slides: {
+            perView: 2,
+          },
+        },
+      },
+    },
+    [
+      (slider) => {
+        let timeout: ReturnType<typeof setTimeout>;
+        let mouseOver = false;
+        function clearNextTimeout() {
+          clearTimeout(timeout);
+        }
+        function nextTimeout() {
+          clearTimeout(timeout);
+          if (mouseOver) return;
+          timeout = setTimeout(() => {
+            slider.next();
+          }, 1000);
+        }
+        slider.on("created", () => {
+          slider.container.addEventListener("mouseover", () => {
+            mouseOver = true;
+            clearNextTimeout();
+          });
+          slider.container.addEventListener("mouseout", () => {
+            mouseOver = false;
+            nextTimeout();
+          });
+          nextTimeout();
+        });
+        slider.on("dragStarted", clearNextTimeout);
+        slider.on("animationEnded", nextTimeout);
+        slider.on("updated", nextTimeout);
+      },
+    ]
+  );
 
   return (
-    <div className="Carousel keen-slider">
+    <div ref={sliderRef} className="Carousel keen-slider">
       {slides.map((slideObj, index) => (
         <div
           key={index}
