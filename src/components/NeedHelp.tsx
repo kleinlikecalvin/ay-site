@@ -1,6 +1,6 @@
 import "./_NeedHelp.scss";
-import homepageVolunteer from "@/graphics/home/homepageVolunteer.png";
-import homepageDonate from "@/graphics/home/homepageDonate.png";
+import homepageVolunteer from "@/graphics/home/homeVolunteer.png";
+import homepageDonate from "@/graphics/home/homeDonate.png";
 import Image from "next/image";
 
 export default function NeedHelp() {
