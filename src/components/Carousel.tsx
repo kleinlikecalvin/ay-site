@@ -7,22 +7,11 @@ import "./_Carousel.scss";
 // Images
 import Image from "next/image";
 
-export default function Carousel({ slides }) {
+export default function Carousel({ slides, breakpoints, page }) {
   const [sliderRef, instanceRef] = useKeenSlider(
     {
       loop: true,
-      breakpoints: {
-        "(min-width: 815px)": {
-          slides: {
-            perView: 4,
-          },
-        },
-        "(max-width: 814px)": {
-          slides: {
-            perView: 2,
-          },
-        },
-      },
+      breakpoints: breakpoints,
     },
     [
       (slider) => {
@@ -36,7 +25,7 @@ export default function Carousel({ slides }) {
           if (mouseOver) return;
           timeout = setTimeout(() => {
             slider.next();
-          }, 1000);
+          }, 2000);
         }
         slider.on("created", () => {
           slider.container.addEventListener("mouseover", () => {
@@ -57,7 +46,7 @@ export default function Carousel({ slides }) {
   );
 
   return (
-    <div ref={sliderRef} className="Carousel keen-slider">
+    <div ref={sliderRef} className={`Carousel keen-slider ${page}`}>
       {slides.map((slideObj, index) => (
         <div
           key={index}

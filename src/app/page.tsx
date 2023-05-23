@@ -6,36 +6,47 @@ import NeedHelp from "@/components/NeedHelp";
 import Socials from "@/components/Socials";
 import NewsletterSignUp from "@/components/NewsletterSignUp";
 
-import spray from "@/graphics/about/kidsPaintingAtSchoolsOut22.jpg";
-import ayFinger from "@/graphics/about/ayFingerPaint22.jpg";
-import kidsPlayDay from "@/graphics/about/kidsPlayDay22.jpg";
-import schoolsOutVolunteers from "@/graphics/about/schoolsOutVolunteers22.jpg";
+//CAROUSEL IMAGES
+import spray from "@/graphics/about/about002.jpg";
+import general from "@/graphics/home/home001.jpg";
+import support from "@/graphics/home/support.jpg";
+import volunteer from "@/graphics/about/about004.jpg";
 export default function Home() {
   const slides = [
     {
       content: spray,
-      desc: "Teens spray painting at our School's Out Party 2022",
+      desc: "Teens spray painting at our School's Out Party in 2022",
     },
     {
-      content: ayFinger,
+      content: general,
       desc: "A hand covered in paint making a peace sign next to finger painted letters 'AY'",
     },
     {
-      content: kidsPlayDay,
+      content: support,
       desc: "AY Volunteer chatting with some kids while he gets them paint",
     },
     {
-      content: schoolsOutVolunteers,
+      content: volunteer,
       desc: "Volunteers from 2022 School's Out Party",
     },
     {
-      content: schoolsOutVolunteers,
+      content: volunteer,
       desc: "Volunteers from 2022 School's Out Party",
     },
   ];
   return (
     <div className="Home">
-      <Carousel slides={slides} />
+      <Carousel
+        slides={slides}
+        breakpoints={{
+          "(min-width: 100px)": {
+            slides: {
+              perView: 1,
+            },
+          },
+        }}
+        page="home"
+      />
       <MissionBanner />
       <hr />
       <IntroduceAY />

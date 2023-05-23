@@ -3,17 +3,62 @@ import "./_styles.scss";
 import "@/app/_global.scss";
 import Carousel from "@/components/Carousel";
 import MissonBanner from "@/components/MissionBanner";
-import nikkiKleinHeadshot from "@/graphics/nikkiKleinHeadshot.jpg";
-import quoteIcon from "@/graphics/about/quoteIcon.png";
 
-export default function AboutUs() {
+// DECORATIVE IMAGES
+import nikkiKleinHeadshot from "@/graphics/nikkiKleinHeadshot.jpg";
+import quoteIcon from "@/graphics/about/aboutClosingQuoteIcon.png";
+
+//CAROUSEL IMAGES
+import spray from "@/graphics/about/about002.jpg";
+import ayFinger from "@/graphics/about/about001.jpg";
+import kidsPlayDay from "@/graphics/about/about003.jpg";
+import schoolsOutVolunteers from "@/graphics/about/about004.jpg";
+
+export default function About() {
+  const slides = [
+    {
+      content: spray,
+      desc: "Teens spray painting at our School's Out Party 2022",
+    },
+    {
+      content: ayFinger,
+      desc: "A hand covered in paint making a peace sign next to finger painted letters 'AY'",
+    },
+    {
+      content: kidsPlayDay,
+      desc: "AY Volunteer chatting with some kids while he gets them paint",
+    },
+    {
+      content: schoolsOutVolunteers,
+      desc: "Volunteers from 2022 School's Out Party",
+    },
+    {
+      content: schoolsOutVolunteers,
+      desc: "Volunteers from 2022 School's Out Party",
+    },
+  ];
   return (
-    <div className="AboutUs">
+    <div className="About">
       <h1>
         <span className="purple">Hello</span> and{" "}
         <span className="orange">Welcome</span>
       </h1>
-      <Carousel />
+      <Carousel
+        slides={slides}
+        breakpoints={{
+          "(min-width: 815px)": {
+            slides: {
+              perView: 4,
+            },
+          },
+          "(max-width: 814px)": {
+            slides: {
+              perView: 2,
+            },
+          },
+        }}
+        page="about"
+      />
       <MissonBanner />
       <section className="support-section">
         <h3>
