@@ -5,7 +5,7 @@ import Head from "@/app/head";
 import GlobalDonate from "@/components/GlobalDonate";
 import Nav from "@/components/Nav";
 
-const bitter = Poppins({
+const poppins = Poppins({
   subsets: ["latin"],
   weight: ["200", "400", "600", "700", "900"],
 });
@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head />
-      <body className={bitter.className}>
+      <body className={poppins.className}>
         <div className="Layout">
           <header>
             <GlobalDonate />
