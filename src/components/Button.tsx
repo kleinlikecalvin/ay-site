@@ -1,6 +1,10 @@
 import React from "react";
 import "./_Button.scss";
-export default function Button({ bgColor, textColor, children }) {
+type ButtonProps = React.PropsWithChildren<{
+  bgColor: string;
+  textColor: string;
+}>;
+export default function Button({ bgColor, textColor, children }: ButtonProps) {
   return (
     <button
       className="Button"
