@@ -31,7 +31,7 @@ export default function VolunteerForm() {
 
         <label htmlFor="phone">
           Phone Number:
-          <input type="tel" id="phone" name="phone" maxLength="12" required />
+          <input type="tel" id="phone" name="phone" maxLength={12} required />
         </label>
 
         <label htmlFor="volunteer-hours">
@@ -168,7 +168,7 @@ export default function VolunteerForm() {
         </label>
 
         <label htmlFor="skills">
-          Do you have any special skills you'd like to mention?
+          Do you have any special skills you&apos;d like to mention?
           <input type={"text"} id="skills" name="skills" />
         </label>
       </fieldset>
