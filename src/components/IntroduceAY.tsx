@@ -42,7 +42,7 @@ export default function IntroduceAY() {
         />
         <h3>Low To No Cost</h3>
         <p>
-          When we were young, we couldn't afford to do much, so all of our
+          When we were young, we couldn&apos;t afford to do much, so all of our
           meets, events, and initiatives are FREE or nearly free!
         </p>
       </section>
