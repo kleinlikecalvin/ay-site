@@ -39,11 +39,7 @@ export default function NewsletterSignUp() {
             style={{ position: "absolute", left: "-5000px" }}
             aria-hidden="true"
           >
-            <input
-              type="text"
-              name="b_84f2d69601c4521beb4cb4f60_0c3d79b652"
-              tabIndex="-1"
-            />
+            <input type="text" name="b_84f2d69601c4521beb4cb4f60_0c3d79b652" />
           </div>
           <div className="optionalParent">
             <div className="clear foot">
