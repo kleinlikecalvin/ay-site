@@ -7,7 +7,13 @@ import "./_Carousel.scss";
 // Images
 import Image from "next/image";
 
-export default function Carousel({ slides, breakpoints, page }) {
+type CarouselProps = {
+  slides: any[];
+  breakpoints: {};
+  page: string;
+};
+
+export default function Carousel({ slides, breakpoints, page }: CarouselProps) {
   const [sliderRef, instanceRef] = useKeenSlider(
     {
       loop: true,
