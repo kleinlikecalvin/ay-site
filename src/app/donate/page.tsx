@@ -1,5 +1,10 @@
 import "./_styles.scss";
 
+export const metadata = {
+  title: "Donate Now",
+  description: "...",
+};
+
 export default function Donate() {
   return (
     <div className="Donate">

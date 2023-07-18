@@ -14,6 +14,11 @@ import ayFinger from "@/graphics/about/about001.jpg";
 import kidsPlayDay from "@/graphics/about/about003.jpg";
 import schoolsOutVolunteers from "@/graphics/about/about004.jpg";
 
+export const metadata = {
+  title: "About AY",
+  description: "...",
+};
+
 export default function About() {
   const slides = [
     {

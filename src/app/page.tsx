@@ -11,6 +11,11 @@ import spray from "@/graphics/about/about002.jpg";
 import general from "@/graphics/home/home001.jpg";
 import support from "@/graphics/home/support.jpg";
 import volunteer from "@/graphics/about/about004.jpg";
+
+export const metadata = {
+  title: "Home",
+  description: "...",
+};
 export default function Home() {
   const slides = [
     {

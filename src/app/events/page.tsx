@@ -2,6 +2,11 @@ import "./_styles.scss";
 import Event from "@/components/Event";
 import blackSmiley from "@/graphics/blackSmiley.png";
 
+export const metadata = {
+  title: "Events",
+  description: "...",
+};
+
 export default function Events() {
   // Event(classes, landingPage, imageSource, altText, header, blurb)
   return (

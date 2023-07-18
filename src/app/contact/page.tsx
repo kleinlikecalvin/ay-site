@@ -1,6 +1,11 @@
 import Image from "next/image";
 import "./_styles.scss";
 
+export const metadata = {
+  title: "Contact AY",
+  description: "...",
+};
+
 export default function Contact() {
   return (
     <div className="Contact">
