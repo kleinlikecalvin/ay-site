@@ -1,0 +1,13 @@
+.Drawer {
+  .trigger {
+    background: #fc6203;
+    width: 100%;
+    border: none;
+    color: white;
+    text-shadow: 1px 1px 3px #212121;
+    cursor: pointer;
+  }
+  .open-content {
+    background-color: white;
+  }
+}

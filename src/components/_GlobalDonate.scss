@@ -1,7 +1,38 @@
 .GlobalDonate {
-  background-color: #ffc39e;
-  text-align: center;
   padding: 15px;
-  font-weight: 700;
   color: #212121;
+  max-width: 1080px;
+  margin: 0 auto;
+  form {
+    display: flex;
+    flex-direction: column;
+    fieldset {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      margin: 20px auto 0;
+      width: 50%;
+      legend {
+        font-size: 20px;
+      }
+      label:not(.radio-label) {
+        padding: 0 0 10px;
+        display: flex;
+        flex-direction: column;
+        input {
+          line-height: 30px;
+          width: 100%;
+        }
+        input:last-child {
+          padding-bottom: 0;
+        }
+      }
+      #donate-other-num {
+        margin-left: 10px;
+      }
+    }
+  }
+  button {
+    margin: 20px auto 0;
+  }
 }

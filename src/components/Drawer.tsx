@@ -1,5 +1,5 @@
 "use client";
-import "./Drawer.scss";
+import "./_Drawer.scss";
 import React from "react";
 
 type DrawerProps = {
@@ -12,13 +12,14 @@ export default function Drawer({ openContent, closedContent }: DrawerProps) {
   return (
     <div className="Drawer" aria-expanded={isOpen}>
       <button
+        className="trigger"
         onClick={() => {
           setIsOpen(!isOpen);
         }}
       >
         {closedContent}
       </button>
-      {isOpen && <div>{openContent}</div>}
+      {isOpen && <div className="open-content">{openContent}</div>}
     </div>
   );
 }

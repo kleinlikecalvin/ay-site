@@ -6,6 +6,7 @@
 body {
   margin: 0 auto;
   color: $black;
+  overflow-x: hidden;
   main {
     max-width: $maxContentWidth;
     margin: 0 auto;
